@@ -44,7 +44,7 @@
     "@types/node": "^22.20.0",
     "eslint-plugin-sonarjs": "^4.1.0",
     "execa": "^10.0.0",
-    "js-yaml": "^4.2.0",
+    "js-yaml": "^5.4.1",
     "oxlint": "1.76.0",
     "oxlint-tsgolint": "7.0.2001",
     "tsdown": "^0.22.2",
