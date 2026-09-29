@@ -1,0 +1,29 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/elix-native-core",
+    "crates/elix-native-bridge",
+    "crates/elix-shell-recovery",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+authors = ["ELIX Team"]
+license = "MIT"
+
+[workspace.dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+windows = "0.62.2"
+windows-core = "0.62.2"
+thiserror = "2.0"
+crossbeam-channel = "0.5"
+parking_lot = "0.12"
+base64 = "0.22"
+sha2 = "0.10"
+webview2-com = "0.39.1"
+# Phase 18A richer Windows virtual-desktop backend. Pin the audited API surface;
+# it is isolated behind runtime probing because it binds undocumented Shell COM.
+winvd = "=0.0.49"
+windows58 = { package = "windows", version = "0.58", features = ["Win32_Foundation"] }

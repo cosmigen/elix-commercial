@@ -1,0 +1,17 @@
+{
+  "extends": "../../../tsconfig.base.json",
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "lib/types",
+    "tsBuildInfoFile": "lib/types/.tsbuildinfo"
+  },
+  "include": ["src/**/*.ts"],
+  "references": [
+    { "path": "../../core/global-input" },
+    { "path": "../../core/spaces" },
+    { "path": "../../core/window-control" },
+    { "path": "../../core/window-registry" },
+    { "path": "../../../vendor/cordis" },
+    { "path": "../../../vendor/schemastery" }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "name": "@deepseek-ai/dsh-window-control",
+  "version": "0.1.0",
+  "description": "Guarded WindowId-based control service for real Windows application windows",
+  "type": "module",
+  "main": "lib/index.js",
+  "types": "lib/types/index.d.ts",
+  "files": [
+    "lib",
+    "src"
+  ],
+  "exports": {
+    ".": {
+      "types": "./lib/types/index.d.ts",
+      "import": "./lib/index.js",
+      "default": "./lib/index.js"
+    }
+  },
+  "dependencies": {
+    "@deepseek-ai/dsh-native-core": "workspace:^",
+    "@deepseek-ai/dsh-window-registry": "workspace:^",
+    "@deepseek-ai/dsh-windows-context": "workspace:^",
+    "@deepseek-ai/schemastery": "workspace:^"
+  },
+  "devDependencies": {
+    "@deepseek-ai/cordis": "workspace:^"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "workspace:^"
+  }
+}

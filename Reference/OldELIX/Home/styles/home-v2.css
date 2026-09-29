@@ -1,0 +1,45 @@
+/* Surface Runtime V2 Home owns only the desktop workspace. Wallpaper is painted
+ * by pseudo-elements on the Home root so it does not introduce another React
+ * surface/component into the Home tree. */
+.home-v2-root {
+  position: relative;
+  background: #050608;
+  isolation: isolate;
+}
+
+.home-v2-root::before {
+  content: "";
+  position: absolute;
+  inset: calc(-1 * var(--home-v2-wallpaper-blur, 0px));
+  z-index: 0;
+  pointer-events: none;
+  background-image: var(--home-v2-wallpaper, url("/wallpaper/current.jpg"));
+  background-size: var(--home-v2-wallpaper-size, cover);
+  background-position: center;
+  background-repeat: var(--home-v2-wallpaper-repeat, no-repeat);
+  filter: blur(var(--home-v2-wallpaper-blur, 0px)) saturate(var(--home-v2-wallpaper-saturation, 100%));
+  transform: translateZ(0);
+  opacity: 1;
+  mask-image: none;
+}
+
+.home-v2-root::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background: rgba(0, 0, 0, var(--home-v2-wallpaper-dim, .18));
+}
+
+.home-v2-root > .shortcut-layer,
+.home-v2-root > .widget-board,
+.home-v2-root > .shortcut-placement-preview,
+.home-v2-root > .widget-placement-preview {
+  z-index: 1;
+}
+
+html[data-elix-surface-role="home"] body,
+html[data-elix-surface-role="home"] #root {
+  background: transparent;
+}

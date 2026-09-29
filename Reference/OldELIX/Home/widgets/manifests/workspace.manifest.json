@@ -1,0 +1,12 @@
+{
+  "manifestVersion": "ElixWidgetManifestV1",
+  "id": "workspace",
+  "name": "Workspace",
+  "version": "1.0.0",
+  "kind": "native-react",
+  "entrypoint": "builtin:workspace",
+  "minimumSize": { "w": 3, "h": 2 },
+  "defaultLayout": { "x": 4, "y": 1, "w": 4, "h": 2 },
+  "permissions": ["os.apps.read", "os.window.read"],
+  "memory": { "storageKey": "workspace", "defaultValue": {} }
+}

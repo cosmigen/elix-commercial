@@ -1,0 +1,12 @@
+{
+  "manifestVersion": "ElixWidgetManifestV1",
+  "id": "clock",
+  "name": "Now",
+  "version": "1.0.0",
+  "kind": "native-react",
+  "entrypoint": "builtin:clock",
+  "minimumSize": { "w": 2, "h": 2 },
+  "defaultLayout": { "x": 12, "y": 1, "w": 3, "h": 2 },
+  "permissions": [],
+  "memory": { "storageKey": "clock", "defaultValue": { "showSeconds": false } }
+}

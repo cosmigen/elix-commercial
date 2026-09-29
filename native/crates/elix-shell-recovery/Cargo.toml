@@ -1,0 +1,10 @@
+[package]
+name = "elix-shell-recovery"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "elix-shell-recovery"
+path = "src/main.rs"

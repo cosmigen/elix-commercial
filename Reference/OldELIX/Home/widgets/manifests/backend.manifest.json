@@ -1,0 +1,12 @@
+{
+  "manifestVersion": "ElixWidgetManifestV1",
+  "id": "backend",
+  "name": "ELIX Runtime",
+  "version": "1.0.0",
+  "kind": "native-react",
+  "entrypoint": "builtin:backend",
+  "minimumSize": { "w": 3, "h": 2 },
+  "defaultLayout": { "x": 11, "y": 5, "w": 4, "h": 2 },
+  "permissions": ["backend.health.read"],
+  "memory": { "storageKey": "backend", "defaultValue": {} }
+}

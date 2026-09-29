@@ -1,0 +1,12 @@
+{
+  "manifestVersion": "ElixWidgetManifestV1",
+  "id": "storage",
+  "name": "Storage",
+  "version": "1.0.0",
+  "kind": "native-react",
+  "entrypoint": "builtin:storage",
+  "minimumSize": { "w": 3, "h": 2 },
+  "defaultLayout": { "x": 8, "y": 5, "w": 4, "h": 2 },
+  "permissions": ["system.storage.read"],
+  "memory": { "storageKey": "storage", "defaultValue": {} }
+}

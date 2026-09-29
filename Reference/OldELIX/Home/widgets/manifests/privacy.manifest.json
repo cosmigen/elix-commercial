@@ -1,0 +1,12 @@
+{
+  "manifestVersion": "ElixWidgetManifestV1",
+  "id": "privacy",
+  "name": "Privacy",
+  "version": "1.0.0",
+  "kind": "native-react",
+  "entrypoint": "builtin:privacy",
+  "minimumSize": { "w": 3, "h": 2 },
+  "defaultLayout": { "x": 1, "y": 7, "w": 4, "h": 2 },
+  "permissions": [],
+  "memory": { "storageKey": "privacy", "defaultValue": {} }
+}

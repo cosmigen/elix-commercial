@@ -1,0 +1,12 @@
+{
+  "manifestVersion": "ElixWidgetManifestV1",
+  "id": "session",
+  "name": "Session",
+  "version": "1.0.0",
+  "kind": "native-react",
+  "entrypoint": "builtin:session",
+  "minimumSize": { "w": 3, "h": 2 },
+  "defaultLayout": { "x": 9, "y": 3, "w": 4, "h": 2 },
+  "permissions": ["window.summary.read"],
+  "memory": { "storageKey": "session", "defaultValue": {} }
+}

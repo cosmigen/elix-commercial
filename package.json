@@ -1,0 +1,56 @@
+{
+  "name": "@deepseek-ai/dsh-root",
+  "version": "0.1.1-rc.1",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@9.15.9",
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0"
+  },
+  "workspaces": [
+    "vendor/*",
+    "packages/*/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "build": "npm run build:lib",
+    "build:lib": "tsc -b tsconfig.host.json && tsdown",
+    "typecheck": "tsc -b tsconfig.host.json",
+    "lint": "oxlint .",
+    "test": "vitest run",
+    "dsh": "node --import tsx/esm apps/cli/src/bin.ts",
+    "demo:overlay": "node --import tsx/esm packages/shell/overlay/demo/visual-test.ts",
+    "demo:home": "node --import tsx/esm packages/shell/home/demo/visual-test.ts",
+    "demo:home-personalization": "node --import tsx/esm packages/shell/home/demo/personalization-test.ts",
+    "demo:shell-layout": "node --import tsx/esm packages/shell/layout/demo/visual-test.ts",
+    "demo:ui-foundation": "node --import tsx/esm packages/shell/ui-foundation/demo/visual-test.ts",
+    "demo:window-registry": "node --import tsx/esm packages/core/window-registry/demo/live-registry.ts",
+    "demo:window-control": "node --import tsx/esm packages/core/window-control/demo/live-control.ts",
+    "demo:application-runtime": "node --import tsx/esm packages/services/application-runtime/demo/live-runtime.ts",
+    "demo:process-lifecycle": "cargo build --manifest-path native/Cargo.toml -p elix-native-bridge && node --import tsx/esm packages/services/application-runtime/demo/process-lifecycle.ts",
+    "demo:window-preview": "cargo build --manifest-path native/Cargo.toml -p elix-native-bridge && node --import tsx/esm packages/core/window-preview/demo/window-preview.ts",
+    "demo:phase17": "cargo build --manifest-path native/Cargo.toml -p elix-native-bridge && node --require ./tools/phase17-test-console/windows-pnpm-spawn.cjs --import tsx/esm tools/phase17-test-console/launcher.ts",
+    "demo:phase18a": "cargo build --manifest-path native/Cargo.toml -p elix-native-bridge && node --import tsx/esm packages/core/spaces/demo/windows-live.ts",
+    "demo:phase18a:ui": "cargo build --manifest-path native/Cargo.toml -p elix-native-bridge && node --import tsx/esm packages/core/spaces/demo/windows-ui.ts",
+    "demo:phase18b": "cargo build --manifest-path native/Cargo.toml -p elix-native-bridge && node --import tsx/esm packages/shell/navigation/demo/windows-live.ts",
+    "demo:phase18b:ui": "cargo build --manifest-path native/Cargo.toml -p elix-native-bridge && node --import tsx/esm packages/shell/navigation/demo/windows-ui.ts",
+    "shell:recovery:check": "cargo run --quiet --manifest-path native/Cargo.toml -p elix-shell-recovery -- check",
+    "shell:recovery:restore": "cargo run --quiet --manifest-path native/Cargo.toml -p elix-shell-recovery -- restore"
+  },
+  "devDependencies": {
+    "@stylistic/eslint-plugin": "^5.10.0",
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^22.20.0",
+    "eslint-plugin-sonarjs": "^4.1.0",
+    "execa": "^10.0.0",
+    "js-yaml": "^4.2.0",
+    "oxlint": "1.76.0",
+    "oxlint-tsgolint": "7.0.2001",
+    "tsdown": "^0.22.2",
+    "tsx": "^4.22.4",
+    "typescript": "^6.0.3",
+    "vite-tsconfig-paths": "^6.1.1",
+    "vitest": "^4.1.8"
+  }
+}

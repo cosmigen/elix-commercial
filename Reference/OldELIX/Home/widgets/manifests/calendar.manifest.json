@@ -1,0 +1,12 @@
+{
+  "manifestVersion": "ElixWidgetManifestV1",
+  "id": "calendar",
+  "name": "Calendar",
+  "version": "1.0.0",
+  "kind": "native-react",
+  "entrypoint": "builtin:calendar",
+  "minimumSize": { "w": 4, "h": 2 },
+  "defaultLayout": { "x": 9, "y": 2, "w": 5, "h": 2 },
+  "permissions": [],
+  "memory": { "storageKey": "calendar", "defaultValue": {} }
+}

@@ -1,0 +1,12 @@
+{
+  "manifestVersion": "ElixWidgetManifestV1",
+  "id": "music",
+  "name": "Music",
+  "version": "1.0.0",
+  "kind": "native-react",
+  "entrypoint": "builtin:music",
+  "minimumSize": { "w": 3, "h": 2 },
+  "defaultLayout": { "x": 9, "y": 7, "w": 4, "h": 2 },
+  "permissions": ["local-audio-read", "media-session"],
+  "memory": { "storageKey": "music", "defaultValue": { "volume": 1 } }
+}

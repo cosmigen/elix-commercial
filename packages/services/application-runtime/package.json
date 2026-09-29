@@ -1,0 +1,32 @@
+{
+  "name": "@deepseek-ai/dsh-application-runtime",
+  "version": "0.1.0",
+  "description": "Authoritative AppId runtime projection over process and window facts for ELIX applications",
+  "type": "module",
+  "main": "lib/index.js",
+  "types": "lib/types/index.d.ts",
+  "files": [
+    "lib",
+    "src"
+  ],
+  "exports": {
+    ".": {
+      "types": "./lib/types/index.d.ts",
+      "import": "./lib/index.js",
+      "default": "./lib/index.js"
+    }
+  },
+  "dependencies": {
+    "@deepseek-ai/dsh-app-registry": "workspace:^",
+    "@deepseek-ai/dsh-process-observation": "workspace:^",
+    "@deepseek-ai/dsh-window-control": "workspace:^",
+    "@deepseek-ai/dsh-window-registry": "workspace:^",
+    "@deepseek-ai/schemastery": "workspace:^"
+  },
+  "devDependencies": {
+    "@deepseek-ai/cordis": "workspace:^"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "workspace:^"
+  }
+}

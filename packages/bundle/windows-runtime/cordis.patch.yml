@@ -1,0 +1,76 @@
+# Production ELIX Windows application/runtime authority stack.
+# Ordering keeps raw Windows/native authorities ahead of shell policy consumers.
+
+- insert:
+    - id: windows-context
+      name: '@deepseek-ai/dsh-windows-context'
+      config:
+        enabled: true
+
+    - id: surface
+      name: '@deepseek-ai/dsh-surface'
+      config:
+        enabled: true
+
+    - id: window-registry
+      name: '@deepseek-ai/dsh-window-registry'
+      config:
+        enabled: true
+
+    - id: spaces
+      name: '@deepseek-ai/dsh-spaces'
+      config:
+        enabled: true
+
+    - id: global-input
+      name: '@deepseek-ai/dsh-global-input'
+      config:
+        enabled: true
+        pollIntervalMs: 40
+
+    - id: window-preview
+      name: '@deepseek-ai/dsh-window-preview'
+      config:
+        enabled: true
+        maxLivePreviews: 12
+
+    - id: window-control
+      name: '@deepseek-ai/dsh-window-control'
+      config:
+        enabled: true
+
+    - id: shell-navigation
+      name: '@deepseek-ai/dsh-shell-navigation'
+      config:
+        enabled: true
+        registerDefaultBindings: true
+
+    - id: shell-layout
+      name: '@deepseek-ai/dsh-shell-layout'
+      config:
+        enabled: true
+        syncNativeWorkArea: false
+
+    - id: window-placement
+      name: '@deepseek-ai/dsh-window-placement'
+      config:
+        enabled: true
+        maxDisplayReplans: 2
+
+    - id: app-registry
+      name: '@deepseek-ai/dsh-app-registry'
+      config:
+        enabled: true
+        autoRefreshOnStartup: true
+        preferNative: true
+
+    - id: process-observation
+      name: '@deepseek-ai/dsh-process-observation'
+      config:
+        enabled: true
+        pollIntervalMs: 1000
+
+    - id: application-runtime
+      name: '@deepseek-ai/dsh-application-runtime'
+      config:
+        enabled: true

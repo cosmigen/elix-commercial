@@ -1,0 +1,12 @@
+{
+  "manifestVersion": "ElixWidgetManifestV1",
+  "id": "date",
+  "name": "Date",
+  "version": "1.0.0",
+  "kind": "native-react",
+  "entrypoint": "builtin:date",
+  "minimumSize": { "w": 2, "h": 2 },
+  "defaultLayout": { "x": 1, "y": 1, "w": 2, "h": 2 },
+  "permissions": [],
+  "memory": { "storageKey": "date", "defaultValue": {} }
+}

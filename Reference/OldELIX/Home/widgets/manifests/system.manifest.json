@@ -1,0 +1,12 @@
+{
+  "manifestVersion": "ElixWidgetManifestV1",
+  "id": "system",
+  "name": "System",
+  "version": "1.0.0",
+  "kind": "native-react",
+  "entrypoint": "builtin:system",
+  "minimumSize": { "w": 3, "h": 2 },
+  "defaultLayout": { "x": 12, "y": 5, "w": 3, "h": 2 },
+  "permissions": ["system.status"],
+  "memory": { "storageKey": "system", "defaultValue": {} }
+}

@@ -1,0 +1,13 @@
+{
+  "manifestVersion": "ElixWidgetManifestV1",
+  "id": "quick-settings",
+  "name": "Quick settings",
+  "version": "1.0.0",
+  "kind": "native-react",
+  "entrypoint": "builtin:quick-settings",
+  "minimumSize": { "w": 3, "h": 2 },
+  "defaultLayout": { "x": 1, "y": 5, "w": 4, "h": 2 },
+  "permissions": [],
+  "interactions": { "rightClick": { "type": "open-panel", "target": "controls" } },
+  "memory": { "storageKey": "quick-settings", "defaultValue": {} }
+}

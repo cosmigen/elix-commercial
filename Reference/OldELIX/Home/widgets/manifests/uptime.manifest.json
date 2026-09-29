@@ -1,0 +1,12 @@
+{
+  "manifestVersion": "ElixWidgetManifestV1",
+  "id": "uptime",
+  "name": "ELIX uptime",
+  "version": "1.0.0",
+  "kind": "native-react",
+  "entrypoint": "builtin:uptime",
+  "minimumSize": { "w": 3, "h": 2 },
+  "defaultLayout": { "x": 5, "y": 7, "w": 4, "h": 2 },
+  "permissions": [],
+  "memory": { "storageKey": "uptime", "defaultValue": {} }
+}

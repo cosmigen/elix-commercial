@@ -1,0 +1,13 @@
+{
+  "manifestVersion": "ElixWidgetManifestV1",
+  "id": "processes",
+  "name": "Processes",
+  "version": "1.0.0",
+  "kind": "native-react",
+  "entrypoint": "builtin:processes",
+  "minimumSize": { "w": 3, "h": 2 },
+  "defaultLayout": { "x": 11, "y": 1, "w": 4, "h": 2 },
+  "permissions": ["system.performance.read"],
+  "interactions": { "rightClick": { "type": "open-panel", "target": "tasks" } },
+  "memory": { "storageKey": "processes", "defaultValue": {} }
+}

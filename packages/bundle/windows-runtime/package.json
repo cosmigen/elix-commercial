@@ -1,0 +1,49 @@
+{
+  "name": "@deepseek-ai/dsh-windows-runtime",
+  "description": "Production Windows application/runtime authority stack for ELIX OS",
+  "version": "0.1.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "type": "module",
+  "main": "lib/index.js",
+  "types": "lib/types/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./lib/types/index.d.ts",
+      "default": "./lib/index.js"
+    },
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./src/*": "./src/*",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/index.js",
+    "cordis.patch.yml",
+    "lib/types/**/*.d.ts"
+  ],
+  "license": "MIT",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "dependencies": {
+    "@deepseek-ai/dsh-app-registry": "workspace:^",
+    "@deepseek-ai/dsh-application-runtime": "workspace:^",
+    "@deepseek-ai/dsh-global-input": "workspace:^",
+    "@deepseek-ai/dsh-process-observation": "workspace:^",
+    "@deepseek-ai/dsh-shell-layout": "workspace:^",
+    "@deepseek-ai/dsh-shell-navigation": "workspace:^",
+    "@deepseek-ai/dsh-spaces": "workspace:^",
+    "@deepseek-ai/dsh-surface": "workspace:^",
+    "@deepseek-ai/dsh-window-control": "workspace:^",
+    "@deepseek-ai/dsh-window-placement": "workspace:^",
+    "@deepseek-ai/dsh-window-preview": "workspace:^",
+    "@deepseek-ai/dsh-window-registry": "workspace:^",
+    "@deepseek-ai/dsh-windows-context": "workspace:^"
+  },
+  "devDependencies": {
+    "@deepseek-ai/cordis": "workspace:^"
+  }
+}

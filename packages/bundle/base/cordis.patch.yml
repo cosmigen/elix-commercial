@@ -1,0 +1,14 @@
+# The dsh-base bundle patch: minimal base infrastructure for the ELIX OS CTX host.
+# Inserts minimal runtime plugins over the empty profile root.
+
+- insert:
+    - id: timer
+      name: '@deepseek-ai/cordis-plugin-timer'
+
+    - id: hmr
+      name: '@deepseek-ai/cordis-plugin-hmr'
+      config:
+        root: ['.']
+
+    - id: logger-console
+      name: '@deepseek-ai/cordis-plugin-logger-console'

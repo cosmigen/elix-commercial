@@ -1,0 +1,12 @@
+{
+  "manifestVersion": "ElixWidgetManifestV1",
+  "id": "device",
+  "name": "This device",
+  "version": "1.0.0",
+  "kind": "native-react",
+  "entrypoint": "builtin:device",
+  "minimumSize": { "w": 3, "h": 2 },
+  "defaultLayout": { "x": 7, "y": 1, "w": 4, "h": 2 },
+  "permissions": ["system.summary.read"],
+  "memory": { "storageKey": "device", "defaultValue": {} }
+}

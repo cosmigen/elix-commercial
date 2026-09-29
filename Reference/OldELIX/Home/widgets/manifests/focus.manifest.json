@@ -1,0 +1,12 @@
+{
+  "manifestVersion": "ElixWidgetManifestV1",
+  "id": "focus",
+  "name": "Focus",
+  "version": "1.0.0",
+  "kind": "native-react",
+  "entrypoint": "builtin:focus",
+  "minimumSize": { "w": 2, "h": 2 },
+  "defaultLayout": { "x": 8, "y": 1, "w": 3, "h": 2 },
+  "permissions": [],
+  "memory": { "storageKey": "focus", "defaultValue": { "durationMinutes": 25 } }
+}

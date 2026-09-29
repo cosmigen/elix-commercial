@@ -1,0 +1,12 @@
+{
+  "manifestVersion": "ElixWidgetManifestV1",
+  "id": "network",
+  "name": "Network",
+  "version": "1.0.0",
+  "kind": "native-react",
+  "entrypoint": "builtin:network",
+  "minimumSize": { "w": 3, "h": 2 },
+  "defaultLayout": { "x": 1, "y": 3, "w": 4, "h": 2 },
+  "permissions": ["system.network.read"],
+  "memory": { "storageKey": "network", "defaultValue": {} }
+}

@@ -1,0 +1,13 @@
+{
+  "manifestVersion": "ElixWidgetManifestV1",
+  "id": "search",
+  "name": "Search",
+  "version": "1.0.0",
+  "kind": "native-react",
+  "entrypoint": "builtin:search",
+  "minimumSize": { "w": 3, "h": 1 },
+  "defaultLayout": { "x": 7, "y": 6, "w": 3, "h": 1 },
+  "permissions": [],
+  "interactions": { "rightClick": { "type": "open-panel", "target": "start" } },
+  "memory": { "storageKey": "search", "defaultValue": {} }
+}

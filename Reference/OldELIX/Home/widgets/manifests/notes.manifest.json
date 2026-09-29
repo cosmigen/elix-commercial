@@ -1,0 +1,12 @@
+{
+  "manifestVersion": "ElixWidgetManifestV1",
+  "id": "notes",
+  "name": "Scratchpad",
+  "version": "1.0.0",
+  "kind": "native-react",
+  "entrypoint": "builtin:notes",
+  "minimumSize": { "w": 3, "h": 3 },
+  "defaultLayout": { "x": 11, "y": 3, "w": 4, "h": 3 },
+  "permissions": ["storage.local"],
+  "memory": { "storageKey": "notes", "defaultValue": { "text": "" } }
+}
